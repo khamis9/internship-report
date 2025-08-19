@@ -152,6 +152,8 @@ body {
     background: var(--gradient-primary);
     position: relative;
     overflow: hidden;
+    margin-bottom: 0;
+    padding-bottom: 0;
 }
 
 .hero::before {
@@ -177,6 +179,7 @@ body {
     position: relative;
     z-index: 1;
     min-height: 100vh;
+    padding-bottom: 0;
 }
 
 .hero-content {
