@@ -178,7 +178,6 @@ body {
     justify-content: center;
     position: relative;
     z-index: 1;
-    min-height: 100vh;
     padding-bottom: 0;
 }
 
@@ -188,8 +187,8 @@ body {
     flex-direction: column;
     justify-content: center;
     height: 100%;
-    padding: 2rem 0;
-    transform: translateY(-3rem);
+    padding: 1rem 0;
+    transform: translateY(0.3rem);
 }
 
 .student-info {
