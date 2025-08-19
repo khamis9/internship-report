@@ -224,57 +224,7 @@ window.addEventListener('scroll', () => {
     progressBar.style.width = `${scrolled}%`;
 });
 
-// Add floating action button for back to top
-const backToTop = document.createElement('button');
-backToTop.innerHTML = '<i class="fas fa-arrow-up"></i>';
-backToTop.style.cssText = `
-    position: fixed;
-    bottom: 30px;
-    right: 30px;
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-    background: var(--primary-color);
-    color: white;
-    border: none;
-    cursor: pointer;
-    opacity: 0;
-    visibility: hidden;
-    transition: all 0.3s ease;
-    z-index: 1000;
-    box-shadow: 0 4px 12px rgba(73, 109, 146, 0.3);
-`;
-
-document.body.appendChild(backToTop);
-
-backToTop.addEventListener('click', () => {
-    window.scrollTo({
-        top: 0,
-        behavior: 'smooth'
-    });
-});
-
-// Show/hide back to top button
-window.addEventListener('scroll', () => {
-    if (window.scrollY > 500) {
-        backToTop.style.opacity = '1';
-        backToTop.style.visibility = 'visible';
-    } else {
-        backToTop.style.opacity = '0';
-        backToTop.style.visibility = 'hidden';
-    }
-});
-
-// Add hover effect to back to top button
-backToTop.addEventListener('mouseenter', () => {
-    backToTop.style.transform = 'scale(1.1)';
-    backToTop.style.boxShadow = '0 6px 20px rgba(73, 109, 146, 0.4)';
-});
-
-backToTop.addEventListener('mouseleave', () => {
-    backToTop.style.transform = 'scale(1)';
-    backToTop.style.boxShadow = '0 4px 12px rgba(73, 109, 146, 0.3)';
-});
+// Back to Top Button functionality is handled by the HTML button with id="backToTop"
 
 // Add particle effect to hero section
 function createParticle() {

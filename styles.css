@@ -488,6 +488,7 @@ section {
 /* About Section */
 .about {
     background: var(--bg-secondary);
+    padding-top: 2rem;
 }
 
 .about-content {
