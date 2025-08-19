@@ -461,7 +461,7 @@ body {
 
 /* Section Styles */
 section {
-    padding: 5rem 0;
+    padding: 3rem 0;
 }
 
 .section-title {
@@ -488,7 +488,7 @@ section {
 /* About Section */
 .about {
     background: var(--bg-secondary);
-    padding-top: 0.5rem;
+    padding-top: 0;
 }
 
 .about-content {
